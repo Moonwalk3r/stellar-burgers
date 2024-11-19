@@ -3,7 +3,7 @@ import {
   getOrdersApi,
   orderBurgerApi,
   getOrderByNumberApi
-} from '@api';
+} from '../../utils/burger-api';
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { TOrder } from '@utils-types';
 
@@ -28,7 +28,7 @@ interface IOrderState {
   totalToday: number | null;
 }
 
-const initialState: IOrderState = {
+export const initialState: IOrderState = {
   order: null,
   name: null,
   error: null,

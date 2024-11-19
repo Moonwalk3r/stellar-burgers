@@ -2,7 +2,7 @@
   "success": true,
   "user": {
     "email": "salix.pro@gmail.com",
-    "name": "Alex"
+    "name": "Alexey"
   },
   "accessToken": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3MTBiZTJmZDgyOWJlMDAxYzc3NmIwYSIsImlhdCI6MTcyOTE1MDUxMSwiZXhwIjoxNzI5MTUxNzExfQ.PhGUrs_SQgQ23RjkjKKyHAekDJd1NAKiwOJwJQnffys",
   "refreshToken": "4c49cbb6127d852bca53c9103930905ea39736c3884c4e34d0d2704eaab8fac02b098b9ba38337a2"

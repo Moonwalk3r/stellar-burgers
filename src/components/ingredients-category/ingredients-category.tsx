@@ -9,10 +9,10 @@ export const IngredientsCategory = forwardRef<
   HTMLUListElement,
   TIngredientsCategoryProps
 >(({ title, titleRef, ingredients }, ref) => {
-  // Получаем состояние конструктора бургера
+  // Получаем состояние конструктора бургера из Redux
   const burgerConstructor = useSelector(selectConstructorState); // Используем правильный селектор
 
-  // Подсчитываем количество ингредиентов
+  // Подсчитываем количество ингредиентов, используемых в бургере
   const ingredientsCounters = useMemo(() => {
     const { bun, ingredients } = burgerConstructor;
     const counters: { [key: string]: number } = {};
@@ -25,7 +25,7 @@ export const IngredientsCategory = forwardRef<
     });
 
     if (bun) {
-      counters[bun._id] = 2; // Булка  считается как два элемента
+      counters[bun._id] = 2; // Булка всегда считается как два элемента (верх и низ)
     }
 
     return counters;
